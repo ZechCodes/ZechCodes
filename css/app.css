@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: medium;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(ellipse at top, #1E2531, #44526D);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20pt;
+  height: 100%;
+}
+
+header {
+  background: radial-gradient(ellipse at top, #00D1FF, #0033B6);
+  min-height: 100%;
+  padding-top: 60px;
+}
+
+header nav {
+  margin: auto;
+}
+
+header nav .branding {
+  float: left;
+  color: white;
+  font-size: 1em;
+}
+
+header nav .branding .zech {
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header nav .links {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+}
+
+header nav .links li {
+  display: inline-block;
+  margin-left: 48px;
+}
+
+header nav .links li a img {
+  max-height: 1.6em;
+  -webkit-transition: -webkit-transform 0.15s ease;
+  transition: -webkit-transform 0.15s ease;
+  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
+}
+
+header nav .links li a:hover img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2), -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+}
+
+header nav .links li.discord a img {
+  margin-bottom: -12px;
+  max-height: calc(1.6em + 18px);
+}
+
+@media screen and (min-width: 900px) {
+  header nav {
+    max-width: 1280px;
+    width: calc(100% - 120px);
+  }
+}
+
+header .message {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+header .message .small-text {
+  font-size: 1.2em;
+  line-height: 3.5em;
+}
+
+header .message .big-text {
+  font-size: 3em;
+  line-height: 1.75em;
+  text-transform: uppercase;
+}
+
+header .chevron {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header .chevron img {
+  -webkit-transition: -webkit-transform 0.15s ease;
+  transition: -webkit-transform 0.15s ease;
+  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
+}
+
+header .chevron:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2), -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+}
+
+.container {
+  margin: auto;
+  font-size: 0.8em;
+}
+
+.container .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+.container .section .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 60px;
+  width: 50%;
+}
+
+.container .section .content p {
+  margin-top: 64px;
+}
+
+.container .section .content p + p {
+  margin-top: 1em;
+}
+
+.container .section .content p + .button {
+  margin-top: 60px;
+}
+
+.container .section .extra {
+  padding: 60px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section .extra ul {
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 2.5em;
+  list-style-type: none;
+}
+
+.container .section .extra img {
+  max-width: 50%;
+  width: 200px;
+}
+
+.container .section.about-me {
+  background: radial-gradient(ellipse at top, #202020, #484A52);
+}
+
+.container .section.about-me .button {
+  color: #202020;
+}
+
+.container .section.discord {
+  background: radial-gradient(ellipse at top, #2635D9, #5865F2);
+}
+
+.container .section.discord .button {
+  color: #2635D9;
+}
+
+.container .section.github {
+  background: radial-gradient(ellipse at top, #000000, #444444);
+}
+
+.container .section.github .button {
+  color: #000000;
+}
+
+.container .section.youtube {
+  background: radial-gradient(ellipse at top, #6D0000, #D90000);
+}
+
+.container .section.youtube .button {
+  color: #C20000;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 1280px;
+    width: calc(100% - 120px);
+  }
+}
+
+.button {
+  background-color: white;
+  border-radius: 48px;
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1em;
+  text-decoration: none;
+  padding: 12px 32px;
+  position: relative;
+  -webkit-transition: padding 0.15s ease;
+  transition: padding 0.15s ease;
+}
+
+.button:hover {
+  padding-left: 35px;
+  padding-right: 29px;
+  -webkit-transition: padding 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: padding 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+}
+/*# sourceMappingURL=app.css.map */
