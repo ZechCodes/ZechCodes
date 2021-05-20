@@ -149,6 +149,18 @@ header .chevron:hover img {
   display: -ms-flexbox;
   display: flex;
   color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 24em;
+}
+
+.container .section a {
+  color: #00ddff;
+}
+
+.container .section a + a {
+  padding-left: 48px;
 }
 
 .container .section .content {
@@ -163,12 +175,16 @@ header .chevron:hover img {
   margin-top: 64px;
 }
 
-.container .section .content p + p {
+.container .section .content p + * {
   margin-top: 1em;
 }
 
-.container .section .content p + .button {
+.container .section .content * + .button {
   margin-top: 60px;
+}
+
+.container .section .content ul {
+  list-style: none;
 }
 
 .container .section .extra {
@@ -177,15 +193,6 @@ header .chevron:hover img {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .container .section .extra ul {
@@ -249,15 +256,19 @@ header .chevron:hover img {
   text-decoration: none;
   padding: 12px 32px;
   position: relative;
-  -webkit-transition: padding 0.15s ease;
-  transition: padding 0.15s ease;
+  -webkit-transition: -webkit-transform 0.15s ease;
+  transition: -webkit-transform 0.15s ease;
+  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
 }
 
 .button:hover {
-  padding-left: 35px;
-  padding-right: 29px;
-  -webkit-transition: padding 0.25s cubic-bezier(0, 0.885, 0.08, 2);
-  transition: padding 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2), -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
 }
 
 footer {

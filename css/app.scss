@@ -139,33 +139,43 @@ header{
     .section{
         display: flex;
         color: white;
+        align-items: center;
+        min-height: 24em;
+
+        a{
+            color: #00ddff;
+
+            &+a{
+                padding-left: 48px;
+            }
+        }
 
         .content{
             flex: 1;
             padding: 60px;
+            width: 50%;
 
             p{
                 margin-top: 64px;
 
-                &+p{
+                &+*{
                     margin-top: 1em;
                 }
             }
 
-            p+.button{
+            *+.button{
                 margin-top: 60px;
             }
 
-            width: 50%;
+            ul{
+                list-style: none;
+            }
         }
 
         .extra{
             padding: 60px;
             flex: 1;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
             ul{
                 font-size: 1.25em;
@@ -230,12 +240,11 @@ header{
     text-decoration: none;
     padding: 12px 32px;
     position: relative;
-    transition: padding 0.15s ease;
+    transition: transform 0.15s ease;
     
     &:hover{
-        padding-left:35px;
-        padding-right:29px;
-        transition: padding 0.25s $bounce;
+        transform: scale(1.1);
+        transition: transform 0.25s $bounce;
     }
 }
 
