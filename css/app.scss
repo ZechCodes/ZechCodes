@@ -59,7 +59,11 @@ header{
 
             li{
                 display: inline-block;
-                margin-left:48px;
+
+                &+li{
+                    margin-left: 48px;
+                }
+                
                 a{
                     img{
                         max-height: 1.6em;
@@ -90,16 +94,62 @@ header{
             max-width: 1280px;
             width: calc(100% - 120px);
         }
+
+        @media screen and (max-width: 899px) {
+            padding: 0 60px;
+
+            .branding{
+                display: block;
+                float: none;
+                margin: auto;
+            }
+    
+            .links{
+                float: none;
+                margin: auto;
+                padding: 0;
+
+                li{
+                    &+li{
+                        margin-left: 16px;
+                    }
+
+                    a{
+                        img{
+                            max-height: 0.8em;
+                            transition: transform 0.15s ease;
+                        }
+                    }
+
+                    &.discord{
+                        a{
+                            img{
+                                margin-bottom: -6px;
+                                max-height: calc(0.8em + 9px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .message{
         color: white;
         font-weight: bold;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        transform: translateX(-50%) translateY(-50%);
+        padding: 60px;
+        
+        @media screen and (min-width: 720px) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 0.6em;
+        }
 
         .small-text{
             font-size: 1.2em;
@@ -153,7 +203,6 @@ header{
         .content{
             flex: 1;
             padding: 60px;
-            width: 50%;
 
             p{
                 margin-top: 64px;
@@ -220,6 +269,36 @@ header{
 
             .button{
                 color: #C20000;
+            }
+        }
+
+        @media screen and (max-width: 899px) {
+            flex-direction: column-reverse;
+
+            .content{
+                width: 100%;
+            }
+
+            .extra{
+                padding-bottom: 0;
+            }
+
+            &.about-me{
+                a{
+                    display: block;
+                    text-align: center;
+                }
+
+                a+a{
+                    padding-top: 1.2em;
+                    padding-left: 0;
+                }
+
+                p{
+                    a{
+                        display: inline;
+                    }
+                }
             }
         }
     }
