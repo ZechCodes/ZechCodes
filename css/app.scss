@@ -22,6 +22,7 @@ h2{
 html{
     height: 100%;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body{
@@ -37,6 +38,7 @@ header{
     background: radial-gradient(ellipse at top, #00D1FF, #0033B6);
     min-height: 100%;
     padding-top: 60px;
+    scroll-snap-align: start;
 
     nav{
         margin: auto;
@@ -191,6 +193,7 @@ header{
         color: white;
         align-items: center;
         min-height: 24em;
+        scroll-snap-align: start;
 
         a{
             color: #00ddff;
@@ -330,4 +333,5 @@ footer {
     padding-top: 320px;
     padding-bottom: 180px;
     text-align: center;
+    scroll-snap-align: start;
 }
