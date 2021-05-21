@@ -201,7 +201,7 @@ header{
         }
 
         .content{
-            flex: 1;
+            flex: 3;
             padding: 60px;
 
             p{
@@ -223,7 +223,7 @@ header{
 
         .extra{
             padding: 60px;
-            flex: 1;
+            flex: 2;
             text-align: center;
 
             ul{
@@ -272,7 +272,7 @@ header{
             }
         }
 
-        @media screen and (max-width: 899px) {
+        @media screen and (max-width: 959px) {
             flex-direction: column-reverse;
 
             .content{
@@ -303,7 +303,7 @@ header{
         }
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 1070px) {
         max-width: 1280px;
         width: calc(100% - 120px);
     }
