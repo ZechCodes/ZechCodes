@@ -296,15 +296,15 @@ header .chevron:hover img {
   .container .section .extra {
     padding-bottom: 0;
   }
-  .container .section.about-me a {
+  .container .section a {
     display: block;
     text-align: center;
   }
-  .container .section.about-me a + a {
+  .container .section a + a {
     padding-top: 1.2em;
     padding-left: 0;
   }
-  .container .section.about-me p a {
+  .container .section p a, .container .section li a {
     display: inline;
   }
 }

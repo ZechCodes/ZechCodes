@@ -283,21 +283,19 @@ header{
                 padding-bottom: 0;
             }
 
-            &.about-me{
+            a{
+                display: block;
+                text-align: center;
+            }
+
+            a+a{
+                padding-top: 1.2em;
+                padding-left: 0;
+            }
+
+            p, li{
                 a{
-                    display: block;
-                    text-align: center;
-                }
-
-                a+a{
-                    padding-top: 1.2em;
-                    padding-left: 0;
-                }
-
-                p{
-                    a{
-                        display: inline;
-                    }
+                    display: inline;
                 }
             }
         }
