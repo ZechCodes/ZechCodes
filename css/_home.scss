@@ -2,6 +2,7 @@ body.home-page{
     header{
         background: radial-gradient(ellipse at top, #00D1FF, #0033B6);
         min-height: 100%;
+        position: relative;
 
         nav{
             .branding{
@@ -11,19 +12,21 @@ body.home-page{
                 }
             }
 
-            .links{
-                li{ 
-                    a{
-                        img{
-                            height: 1.6em;
-                        }
-                    }
-
-                    &.discord{
+            @media screen and (min-width: 721px){
+                .links{
+                    li{ 
                         a{
                             img{
-                                margin-bottom: -13px;
-                                height: calc(1.6em + 18px);
+                                height: 1.6em;
+                            }
+                        }
+                        
+                        &.discord{
+                            a{
+                                img{
+                                    margin-bottom: -13px;
+                                    height: calc(1.6em + 18px);
+                                }
                             }
                         }
                     }
@@ -36,7 +39,7 @@ body.home-page{
             font-weight: bold;
             padding: calc(var(--gutter)*2) var(--gutter);
             
-            @media screen and (min-width: 720px) {
+            @media screen and (min-width: 721px) {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -66,7 +69,12 @@ body.home-page{
             left: 50%;
             transform: translateX(-50%);
 
+
             img{
+                animation-duration: 7.5s;
+                animation-direction: alternate;
+                animation-name: chevron-slide;
+                animation-iteration-count: infinite;
                 transition: transform 0.15s ease;
             }
 
@@ -211,4 +219,11 @@ body.home-page{
             transition: transform 0.25s $bounce;
         }
     }
+}
+
+@keyframes chevron-slide {
+    from { transform: translateY(0); }
+    92%   { transform: translateY(0) scale(1); }
+    96%   { transform: translateY(0.6em) scale(1.2); }
+    to { transform: translateY(0) scale(1); }
 }

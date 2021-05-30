@@ -302,6 +302,7 @@ header nav .links li.discord a img {
 body.home-page header {
   background: radial-gradient(ellipse at top, #00D1FF, #0033B6);
   min-height: 100%;
+  position: relative;
 }
 
 body.home-page header nav .branding .zech {
@@ -309,13 +310,14 @@ body.home-page header nav .branding .zech {
   font-size: 1.6em;
 }
 
-body.home-page header nav .links li a img {
-  height: 1.6em;
-}
-
-body.home-page header nav .links li.discord a img {
-  margin-bottom: -13px;
-  height: calc(1.6em + 18px);
+@media screen and (min-width: 721px) {
+  body.home-page header nav .links li a img {
+    height: 1.6em;
+  }
+  body.home-page header nav .links li.discord a img {
+    margin-bottom: -13px;
+    height: calc(1.6em + 18px);
+  }
 }
 
 body.home-page header .message {
@@ -324,7 +326,7 @@ body.home-page header .message {
   padding: calc(var(--gutter)*2) var(--gutter);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 721px) {
   body.home-page header .message {
     position: absolute;
     top: 50%;
@@ -361,6 +363,14 @@ body.home-page header .chevron {
 }
 
 body.home-page header .chevron img {
+  -webkit-animation-duration: 7.5s;
+          animation-duration: 7.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-name: chevron-slide;
+          animation-name: chevron-slide;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-transition: -webkit-transform 0.15s ease;
   transition: -webkit-transform 0.15s ease;
   transition: transform 0.15s ease;
@@ -522,5 +532,43 @@ body.home-page .button:hover {
   transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
   transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
   transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2), -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+}
+
+@-webkit-keyframes chevron-slide {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  92% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+  96% {
+    -webkit-transform: translateY(0.6em) scale(1.2);
+            transform: translateY(0.6em) scale(1.2);
+  }
+  to {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes chevron-slide {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  92% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+  96% {
+    -webkit-transform: translateY(0.6em) scale(1.2);
+            transform: translateY(0.6em) scale(1.2);
+  }
+  to {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
 }
 /*# sourceMappingURL=app.css.map */
