@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+:root {
+  --gutter: 60px;
+}
+
+@media screen and (max-width: 720px) {
+  :root {
+    --gutter: 30px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +44,7 @@ body {
 header {
   background: radial-gradient(ellipse at top, #00D1FF, #0033B6);
   min-height: 100%;
-  padding-top: 60px;
+  padding-top: var(--gutter);
 }
 
 header nav {
@@ -45,6 +55,7 @@ header nav .branding {
   float: left;
   color: white;
   font-size: 1em;
+  cursor: default;
 }
 
 header nav .branding .zech {
@@ -89,16 +100,16 @@ header nav .links li.discord a img {
   max-height: calc(1.6em + 18px);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 720px) {
   header nav {
     max-width: 1280px;
-    width: calc(100% - 120px);
+    padding: 0 var(--gutter);
   }
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 719px) {
   header nav {
-    padding: 0 60px;
+    padding: 0 var(--gutter);
   }
   header nav .branding {
     display: block;
@@ -129,7 +140,7 @@ header nav .links li.discord a img {
 header .message {
   color: white;
   font-weight: bold;
-  padding: 60px;
+  padding: calc(var(--gutter)*2) var(--gutter);
 }
 
 @media screen and (min-width: 720px) {
@@ -162,7 +173,7 @@ header .message .big-text {
 
 header .chevron {
   position: absolute;
-  bottom: 60px;
+  bottom: var(--gutter);
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -208,11 +219,15 @@ header .chevron:hover img {
   padding-left: 48px;
 }
 
+.container .section h2 {
+  margin-top: 64px;
+}
+
 .container .section .content {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-  padding: 60px;
+  padding: var(--gutter);
 }
 
 .container .section .content p {
@@ -224,7 +239,7 @@ header .chevron:hover img {
 }
 
 .container .section .content * + .button {
-  margin-top: 60px;
+  margin-top: 64px;
 }
 
 .container .section .content ul {
@@ -232,7 +247,7 @@ header .chevron:hover img {
 }
 
 .container .section .extra {
-  padding: 60px;
+  padding: var(--gutter);
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -242,8 +257,12 @@ header .chevron:hover img {
 .container .section .extra ul {
   font-size: 1.25em;
   font-weight: 500;
-  line-height: 2.5em;
+  line-height: 1.2em;
   list-style-type: none;
+}
+
+.container .section .extra ul li {
+  margin-top: 1em;
 }
 
 .container .section .extra img {
@@ -299,6 +318,7 @@ header .chevron:hover img {
   .container .section a {
     display: block;
     text-align: center;
+    margin: 0 var(--gutter);
   }
   .container .section a + a {
     padding-top: 1.2em;
@@ -306,13 +326,14 @@ header .chevron:hover img {
   }
   .container .section p a, .container .section li a {
     display: inline;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 1070px) {
   .container {
     max-width: 1280px;
-    width: calc(100% - 120px);
+    padding: 0 var(--gutter);
   }
 }
 
@@ -343,8 +364,7 @@ header .chevron:hover img {
 
 footer {
   color: #999999;
-  padding-top: 320px;
-  padding-bottom: 180px;
+  padding: calc(var(--gutter) * 6) var(--gutter) calc(var(--gutter) * 3) var(--gutter);
   text-align: center;
 }
 /*# sourceMappingURL=app.css.map */

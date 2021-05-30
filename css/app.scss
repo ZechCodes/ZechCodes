@@ -2,6 +2,13 @@
 
 $bounce: cubic-bezier(0.0, 0.885, 0.08, 2);
 
+:root{
+    --gutter: 60px;
+    @media screen and (max-width: 720px){
+        --gutter: 30px;
+    }
+}
+
 *{
     margin:0;
     padding:0;
@@ -36,7 +43,7 @@ body{
 header{
     background: radial-gradient(ellipse at top, #00D1FF, #0033B6);
     min-height: 100%;
-    padding-top: 60px;
+    padding-top: var(--gutter);
 
     nav{
         margin: auto;
@@ -44,6 +51,7 @@ header{
             float: left;
             color: white;
             font-size: 1em;
+            cursor: default;
 
             .zech{
                 font-size: 1.6em;
@@ -59,6 +67,7 @@ header{
 
             li{
                 display: inline-block;
+
 
                 &+li{
                     margin-left: 48px;
@@ -90,13 +99,13 @@ header{
             }
         }
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 720px) {
             max-width: 1280px;
-            width: calc(100% - 120px);
+            padding: 0 var(--gutter);
         }
 
-        @media screen and (max-width: 899px) {
-            padding: 0 60px;
+        @media screen and (max-width: 719px) {
+            padding: 0 var(--gutter);
 
             .branding{
                 display: block;
@@ -137,7 +146,7 @@ header{
     .message{
         color: white;
         font-weight: bold;
-        padding: 60px;
+        padding: calc(var(--gutter)*2) var(--gutter);
         
         @media screen and (min-width: 720px) {
             position: absolute;
@@ -165,7 +174,7 @@ header{
 
     .chevron{
         position: absolute;
-        bottom: 60px;
+        bottom: var(--gutter);
         left: 50%;
         transform: translateX(-50%);
 
@@ -200,9 +209,13 @@ header{
             }
         }
 
+        h2{
+            margin-top: 64px;
+        }
+
         .content{
             flex: 3;
-            padding: 60px;
+            padding: var(--gutter);
 
             p{
                 margin-top: 64px;
@@ -213,7 +226,7 @@ header{
             }
 
             *+.button{
-                margin-top: 60px;
+                margin-top: 64px;
             }
 
             ul{
@@ -222,15 +235,18 @@ header{
         }
 
         .extra{
-            padding: 60px;
+            padding: var(--gutter);
             flex: 2;
             text-align: center;
 
             ul{
                 font-size: 1.25em;
                 font-weight: 500;
-                line-height: 2.5em;
+                line-height: 1.2em;
                 list-style-type: none;
+                li{
+                    margin-top:1em;
+                }
             }
 
             img{
@@ -286,6 +302,7 @@ header{
             a{
                 display: block;
                 text-align: center;
+                margin: 0 var(--gutter);
             }
 
             a+a{
@@ -296,6 +313,7 @@ header{
             p, li{
                 a{
                     display: inline;
+                    margin: 0;
                 }
             }
         }
@@ -303,7 +321,7 @@ header{
 
     @media screen and (min-width: 1070px) {
         max-width: 1280px;
-        width: calc(100% - 120px);
+        padding: 0 var(--gutter);
     }
 }
 
@@ -327,7 +345,6 @@ header{
 
 footer {
     color: #999999;
-    padding-top: 320px;
-    padding-bottom: 180px;
+    padding: calc(var(--gutter) * 6) var(--gutter) calc(var(--gutter) * 3) var(--gutter);
     text-align: center;
 }
