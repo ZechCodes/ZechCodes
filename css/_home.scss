@@ -112,10 +112,10 @@ body.home-page{
                 ul{
                     font-size: 1.25em;
                     font-weight: 500;
-                    line-height: 1.2em;
+                    line-height: 1.5em;
                     list-style-type: none;
                     li{
-                        margin-top:1em;
+                        margin-top:1em;;
                     }
                 }
     
@@ -159,7 +159,6 @@ body.home-page{
             }
 
             @media screen and (max-width: 960px) {
-                max-width: none;
                 flex-direction: column-reverse;
 
                 .content{
@@ -188,6 +187,10 @@ body.home-page{
                     }
                 }
             }
+        }
+
+        @media screen and (max-width: 960px){
+            padding: 0;
         }
     }
 
