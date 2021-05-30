@@ -48,7 +48,7 @@ body {
 }
 
 footer {
-  color: #707790;
+  color: #707780;
   padding: calc(var(--gutter) * 6) var(--gutter) calc(var(--gutter) * 3) var(--gutter);
   text-align: center;
   -webkit-touch-callout: none;
