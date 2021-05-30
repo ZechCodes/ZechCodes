@@ -310,12 +310,12 @@ body.home-page header nav .branding .zech {
 }
 
 body.home-page header nav .links li a img {
-  max-height: 1.6em;
+  height: 1.6em;
 }
 
 body.home-page header nav .links li.discord a img {
-  margin-bottom: -12px;
-  max-height: calc(1.6em + 18px);
+  margin-bottom: -13px;
+  height: calc(1.6em + 18px);
 }
 
 body.home-page header .message {

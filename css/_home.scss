@@ -15,15 +15,15 @@ body.home-page{
                 li{ 
                     a{
                         img{
-                            max-height: 1.6em;
+                            height: 1.6em;
                         }
                     }
 
                     &.discord{
                         a{
                             img{
-                                margin-bottom: -12px;
-                                max-height: calc(1.6em + 18px);
+                                margin-bottom: -13px;
+                                height: calc(1.6em + 18px);
                             }
                         }
                     }
