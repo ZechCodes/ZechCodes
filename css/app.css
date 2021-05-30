@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  background-image: radial-gradient(ellipse at bottom, #141a24, #313846);
+  background-image: radial-gradient(circle at bottom, #141a24, #313846);
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
@@ -300,7 +300,7 @@ header nav .links li.discord a img {
 }
 
 body.home-page header {
-  background: radial-gradient(ellipse at top, #00D1FF, #0033B6);
+  background: radial-gradient(circle at top, #00D1FF, #0033B6);
   min-height: 100%;
   position: relative;
 }
@@ -444,7 +444,7 @@ body.home-page .container .section .extra img {
 }
 
 body.home-page .container .section.about-me {
-  background: radial-gradient(ellipse at top, #202020, #484A52);
+  background: radial-gradient(circle at top, #202020, #484A52);
 }
 
 body.home-page .container .section.about-me .button {
@@ -452,7 +452,7 @@ body.home-page .container .section.about-me .button {
 }
 
 body.home-page .container .section.discord {
-  background: radial-gradient(ellipse at top, #2635D9, #5865F2);
+  background: radial-gradient(circle at top, #2635D9, #5865F2);
 }
 
 body.home-page .container .section.discord .button {
@@ -460,7 +460,7 @@ body.home-page .container .section.discord .button {
 }
 
 body.home-page .container .section.github {
-  background: radial-gradient(ellipse at top, #000000, #444444);
+  background: radial-gradient(circle at top, #000000, #444444);
 }
 
 body.home-page .container .section.github .button {
@@ -468,7 +468,7 @@ body.home-page .container .section.github .button {
 }
 
 body.home-page .container .section.youtube {
-  background: radial-gradient(ellipse at top, #6D0000, #D90000);
+  background: radial-gradient(circle at top, #8d0101, #D90000);
 }
 
 body.home-page .container .section.youtube .button {
