@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  background-image: radial-gradient(ellipse at top, #1E2531, #44526D);
+  background-image: radial-gradient(ellipse at bottom, #141a24, #313846);
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
