@@ -100,22 +100,28 @@ header{
             
             .chevron{
                 img{
-                    transform: rotate(90deg);
+                    transform: rotate(90deg) scale(1);
                     height: 0.75em;
                     position: absolute;
                     bottom: 0.5em;
                     right: calc(100% + 16px);
-                    transition: none;
+                    transition: transform 0.25s ease;
                 }
             }
+
             a{
                 display: inline-block;
                 transform-origin: left;
                 transition: transform 0.15s ease;
 
                 &:hover{
-                    transform: scale(1.1);
-                    transition: transform 0.25s $bounce;
+                    .zech{
+                        text-decoration: underline;
+                    }
+                    img{
+                        transform: rotate(90deg) scale(1.4);
+                        transition: transform 0.25s $bounce;
+                    }
                 }
             }
         }
@@ -245,6 +251,7 @@ header{
             a{
                 display: inline-block;
                 transition: transform 0.15s ease;
+
                 &:hover{
                     transform: scale(1.4) rotate(72deg);
                     transition: transform 0.25s $bounce;
@@ -252,6 +259,7 @@ header{
             }
             
             img{
+                display: inline-block;
                 height: 2em;
             }
 
@@ -284,11 +292,70 @@ header{
 }
 
 
-.blog-post{
+.blog-post, .blog-post-list{
     .container{
         .section{
-            h2{
-                margin-top: calc(var(--gutter) * 3);
+            margin-top: 12em;
+        }
+    }
+}
+
+.blog-post-list{
+    .section{
+        &+.section{
+            margin-top: 3.25em;
+        }
+
+        a{
+            &:hover{
+                    text-decoration: underline;
+                }
+        }
+
+        h2 {
+            float: left;
+            margin-top: 0;
+
+            a{
+                color: white;
+            }
+        }
+
+        h5{
+            float: left;
+            margin-left: 2ch;
+            margin-top: 1.6em;
+        }
+
+        p{
+            clear: both;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            padding-top: 1.25em;
+        }
+
+        .read-more{
+            color: white;
+            display: inline-block;
+            font-weight: 500;
+            margin-top: 1.2em;
+
+            .chevron{
+                display: inline-block;
+                height: 0.6em;
+                left: 1ch;
+                position: relative;
+                transform: rotate(-90deg) scale(1);
+                transition: transform 0.15s ease;
+            }
+
+            &:hover{
+                .chevron{
+                    transform: rotate(-90deg) scale(1.4);
+                    transition: transform 0.25s $bounce;
+                }
             }
         }
     }

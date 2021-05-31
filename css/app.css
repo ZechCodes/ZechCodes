@@ -109,14 +109,16 @@ header nav .branding .zech {
 }
 
 header nav .branding .chevron img {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(90deg) scale(1);
+          transform: rotate(90deg) scale(1);
   height: 0.75em;
   position: absolute;
   bottom: 0.5em;
   right: calc(100% + 16px);
-  -webkit-transition: none;
-  transition: none;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 
 header nav .branding a {
@@ -129,9 +131,13 @@ header nav .branding a {
   transition: transform 0.15s ease, -webkit-transform 0.15s ease;
 }
 
-header nav .branding a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+header nav .branding a:hover .zech {
+  text-decoration: underline;
+}
+
+header nav .branding a:hover img {
+  -webkit-transform: rotate(90deg) scale(1.4);
+          transform: rotate(90deg) scale(1.4);
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
   transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
   transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
@@ -269,6 +275,7 @@ header nav .links li.discord a img {
 }
 
 .container .section .post-likes img {
+  display: inline-block;
   height: 2em;
 }
 
@@ -295,8 +302,69 @@ header nav .links li.discord a img {
   text-align: center;
 }
 
-.blog-post .container .section h2 {
-  margin-top: calc(var(--gutter) * 3);
+.blog-post .container .section, .blog-post-list .container .section {
+  margin-top: 12em;
+}
+
+.blog-post-list .section + .section {
+  margin-top: 3.25em;
+}
+
+.blog-post-list .section a:hover {
+  text-decoration: underline;
+}
+
+.blog-post-list .section h2 {
+  float: left;
+  margin-top: 0;
+}
+
+.blog-post-list .section h2 a {
+  color: white;
+}
+
+.blog-post-list .section h5 {
+  float: left;
+  margin-left: 2ch;
+  margin-top: 1.6em;
+}
+
+.blog-post-list .section p {
+  clear: both;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-top: 1.25em;
+}
+
+.blog-post-list .section .read-more {
+  color: white;
+  display: inline-block;
+  font-weight: 500;
+  margin-top: 1.2em;
+}
+
+.blog-post-list .section .read-more .chevron {
+  display: inline-block;
+  height: 0.6em;
+  left: 1ch;
+  position: relative;
+  -webkit-transform: rotate(-90deg) scale(1);
+          transform: rotate(-90deg) scale(1);
+  -webkit-transition: -webkit-transform 0.15s ease;
+  transition: -webkit-transform 0.15s ease;
+  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
+}
+
+.blog-post-list .section .read-more:hover .chevron {
+  -webkit-transform: rotate(-90deg) scale(1.4);
+          transform: rotate(-90deg) scale(1.4);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
+  transition: transform 0.25s cubic-bezier(0, 0.885, 0.08, 2), -webkit-transform 0.25s cubic-bezier(0, 0.885, 0.08, 2);
 }
 
 body.home-page header {
