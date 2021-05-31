@@ -38,6 +38,7 @@ html {
 }
 
 body {
+  background-color: #313846;
   background-image: radial-gradient(circle at bottom, #141a24, #313846);
   background-repeat: no-repeat;
   background-attachment: fixed;
