@@ -42,13 +42,13 @@ def generate_stars(
     for i in range(200):
         x, y = randint(0, 600), randint(0, 240)
         size = randint(1, 3)
-        weight = (randint(0, 24) + iteration) % 25 * 2
-        if weight >= 24:
-            weight = 48 - weight
+        weight = (randint(0, 96) + iteration) % 97
+        if weight > 48:
+            weight = 96 - weight
         draw.ellipse(
             (x - size // 2, y - size // 2, x + size, y + size),
             fill=tuple(
-                ((c * weight + bc * (48 - weight)) // 24)
+                ((c * weight + bc * (48 - weight)) // 48)
                 for c, bc in zip((255, 255, 255), background)
             ),
         )
