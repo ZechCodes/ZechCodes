@@ -1,47 +1,22 @@
 from __future__ import annotations
-from itertools import chain
 from PIL import Image as PILImage, ImageDraw
 from random import seed, randint
 
 
-class Image:
-    def __init__(self, width: int, height: int, fill: tuple[int, int, int] = (0, 0, 0)):
-        self.width = width
-        self.height = height
-        self._image = [[fill] * width for _ in range(height)]
-
-    def blend(self, x: int, y: int, color: tuple[int, int, int], alpha: float = 0.5):
-        self[x, y] = tuple(
-            (channel * (1 - alpha) + new_channel * alpha) // 2
-            for channel, new_channel in zip(self[x, y], color)
-        )
-
-    def generate(self):
-        flattened = self._flatten_to_bytes()
-        return PILImage.frombytes("RGB", (self.width, self.height), flattened)
-
-    def __getitem__(self, coords: tuple[int, int]) -> tuple[int, int, int]:
-        x, y = coords
-        return self._image[y][x]
-
-    def __setitem__(self, coords: tuple[int, int], color: tuple[int, int, int]):
-        x, y = coords
-        self._image[y][x] = color
-
-    def _flatten_to_bytes(self) -> bytes:
-        return bytes(chain(*chain(*self._image)))
-
-
 def generate_stars(
-    iteration: int, background: tuple[int, int, int], width: int, height: int
+    iteration: int,
+    background: tuple[int, int, int],
+    width: int,
+    height: int,
+    num: int = 200,
+    min_diameter: int = 1,
+    max_diameter: int = 3,
 ) -> PILImage:
     img = PILImage.new("RGB", (width, height), background)
-
-    seed(0)
     draw = ImageDraw.Draw(img)
-    for i in range(200):
-        x, y = randint(0, 600), randint(0, 240)
-        size = randint(1, 3)
+    for i in range(num):
+        x, y = randint(0, width), randint(0, height)
+        size = randint(min_diameter, max_diameter)
         weight = (randint(0, 96) + iteration) % 97
         if weight > 48:
             weight = 96 - weight
@@ -57,6 +32,7 @@ def generate_stars(
 
 
 def generate_image(width: int, height: int):
+    seed(0)
     frames: PILImage = []
     distance = 380
     bg = (0, 0, 30)
@@ -145,17 +121,54 @@ def generate_image(width: int, height: int):
             ),
             asteroid_sm.rotate(f % total_frames * d // total_frames),
         )
-        frames.append(img.convert("P", dither=PILImage.NONE))
+        # frames.append(img.convert("P", dither=PILImage.NONE))
+        frames.append(img)
 
     frames[0].save(
-        "zechcodes-cover-july-2021.gif",
-        save_all=True,
-        append_images=frames[1:],
-        duration=1,
-        loop=0,
-        dither=PILImage.NONE,
+        "zechcodes-cover-july-2021.png",
+        # save_all=True,
+        # append_images=frames[1:],
+        # duration=1,
+        # loop=0,
+        # dither=PILImage.NONE,
     )
 
 
+def generate_image_twitter(width: int, height: int):
+    bg = (0x0, 0x10, 0x43)
+    img = generate_stars(0, bg, width, height, 400, 2, 5)
+
+    asteroid_lg = PILImage.open("asteroid-lg.png")
+    for i in range(7):
+        rotation = randint(-180, 180)
+        x = randint(0, width + asteroid_lg.width)
+        y = randint(0, height + asteroid_lg.height)
+        img.paste(
+            asteroid_lg.rotate(rotation),
+            (
+                x - asteroid_lg.width // 2,
+                y - asteroid_lg.height // 2,
+            ),
+            asteroid_lg.rotate(rotation),
+        )
+
+    asteroid_sm = PILImage.open("asteroid-sm.png")
+    for i in range(15):
+        rotation = randint(-180, 180)
+        x = randint(0, width + asteroid_sm.width)
+        y = randint(0, height + asteroid_sm.height)
+        img.paste(
+            asteroid_sm.rotate(rotation),
+            (
+                x - asteroid_sm.width // 2,
+                y - asteroid_sm.height // 2,
+            ),
+            asteroid_sm.rotate(rotation),
+        )
+
+    img.save("zechcodes-cover-july-2021.png")
+
+
 if __name__ == "__main__":
-    generate_image(600, 240)
+    # generate_image(600, 240)  # Discord cover
+    generate_image_twitter(1500, 500)  # Twitter cover
