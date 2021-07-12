@@ -1,4 +1,6 @@
-## 🙋‍♂️ Hi! I'm Zech!
+<img align="center" src="https://raw.githubusercontent.com/ZechCodes/ZechCodes/main/personal-assets/asteroids/zechcodes-cover-july-2021.gif" width="100%" />
+
+<h1 style="position:-80px;">🙋‍♂️ Hi! I'm Zech!</h1>
 
 I'm a software engineer with a passion for writing cool code and helping others.
 
