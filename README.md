@@ -20,7 +20,3 @@ I'm a software engineer with a passion for writing cool code and helping others.
 
 - 🐍 Python Expert
 - 💬 Beginner.py Discord Admin
-
-<hr />
-
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=ZechCodes&theme=prussian&hide_border=true&background=000000)](https://git.io/streak-stats)
