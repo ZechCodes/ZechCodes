@@ -10,6 +10,12 @@
     <img src="https://img.shields.io/badge/-Discord-5865F2?style=for-the-badge&logoColor=white&logo=discord&labelColor=4855E2"/>
 </a>
 
+[![Commits Badge](https://badges.pufler.dev/commits/monthly/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes)
+[![Repos Badge](https://badges.pufler.dev/repos/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes?tab=repositories)
+[![Gists Badge](https://badges.pufler.dev/gists/ZechCodes?style=flat-square&color=3377ff)](https://gist.github.com/ZechCodes)
+[![Years Badge](https://badges.pufler.dev/years/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes)
+[![Visits Badge](https://badges.pufler.dev/visits/ZechCodes/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes)
+
 I'm a software engineer with a passion for writing cool code and helping others.
 
 - 🐍 Python Expert
@@ -17,10 +23,4 @@ I'm a software engineer with a passion for writing cool code and helping others.
 
 <hr />
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=zechcodes&bg_color=90,282828,181818&title_color=ffffff&text_color=cccccc&border_color=000000&show_icons=1&icon_color=4285F4&custom_title=My%20GitHub%20Stats&hide_rank=1&hide=contribs" />
-</a>
-
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zechcodes&bg_color=90,282828,181818&title_color=ffffff&text_color=cccccc&border_color=000000&custom_title=My%20Most%20Used%20Languages&card_width=270&layout=compact" />
-</a>
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=ZechCodes&theme=prussian&hide_border=true&background=000000)](https://git.io/streak-stats)
