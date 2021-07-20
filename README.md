@@ -1,4 +1,4 @@
-# 🙋‍♂️ Hi! I'm Zech!
+# 🙋🏻‍♂️ Hi! I'm Zech!
 
 <a href="https://twitter.com/ZechCodes">
     <img alt="followers" title="Follow me on Twitter" src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=0081D2&color=1DA1F2"/>
