@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = "django-insecure-dqpiv=6n2go^55h33e$c4u^uviyk2yvi=bsauk)&%i%*haiinx"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = ["zech.codes", "localhost"]
+# ALLOWED_HOSTS = ["zech.codes", "localhost"]
 
 
 # Application definition
@@ -68,12 +68,12 @@ WSGI_APPLICATION = "zechcodes.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 
 
 # Password validation
