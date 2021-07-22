@@ -7,3 +7,4 @@ data:
   DJANGO_LOGLEVEL: info
   DEBUG: "True"
   DATABASE_ENGINE: postgresql_psycopg2
+  GOOGLE_ANALYTICS_KEY: G-6RQHJEDDGG
