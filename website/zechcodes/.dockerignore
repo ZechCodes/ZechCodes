@@ -1,0 +1,11 @@
+static
+.*
+*.css
+*.gif
+*.jpg
+*.js
+*.map
+*.png
+*.scss
+*.sqlite3
+*.svg
