@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zechcodes-blog-app
+  labels:
+    app: zechcodes-blog
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: zechcodes-blog
+  template:
+    metadata:
+      labels:
+        app: zechcodes-blog
+    spec:
+      containers:
+        - image: registry.digitalocean.com/zechcodes/zechcodes-django-site:20210722
+          name: zechcodes-blog
+          envFrom:
+          - secretRef:
+              name: zechcodes-secret
+          - configMapRef:
+              name: zechcodes-blog
+          ports:
+            - containerPort: 8000
+              name: gunicorn
