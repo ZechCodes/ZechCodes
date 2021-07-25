@@ -6,8 +6,8 @@
 <!-- <a href="https://www.youtube.com/channel/UC6-iUsH8cOQ2GxGLyIVcw-Q">
     <img alt="youtube" title="YouTube" src="https://img.shields.io/badge/-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&labelColor=CF0000&color=FF0000"/>
 </a> -->
-<a href="https://www.youtube.com/channel/UC6-iUsH8cOQ2GxGLyIVcw-Q">
-    <img alt="hashnode" title="Zech.codes on Hashnode" src="https://img.shields.io/badge/-Hashnode-red?style=for-the-badge&logo=hashnode&logoColor=white&labelColor=1049e7&color=2962ff"/>
+<a href="https://zech.codes">
+    <img alt="hashnode" title="Zech.codes on Hashnode" src="https://img.shields.io/badge/-Zech.codes?style=for-the-badge&logo=hashnode&logoColor=white&labelColor=1049e7&color=2962ff"/>
 </a>
 <a href="https://discord.gg/sfHykntuGy" alt="Beginner.py Discord Server">
     <img src="https://img.shields.io/badge/-Discord-5865F2?style=for-the-badge&logoColor=white&logo=discord&labelColor=4855E2"/>
