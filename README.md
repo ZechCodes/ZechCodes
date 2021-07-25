@@ -13,7 +13,6 @@
 [![Commits Badge](https://badges.pufler.dev/commits/monthly/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes)
 [![Repos Badge](https://badges.pufler.dev/repos/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes?tab=repositories)
 [![Gists Badge](https://badges.pufler.dev/gists/ZechCodes?style=flat-square&color=3377ff)](https://gist.github.com/ZechCodes)
-[![Years Badge](https://badges.pufler.dev/years/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes)
 [![Visits Badge](https://badges.pufler.dev/visits/ZechCodes/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes)
 
 I'm a software engineer with a passion for writing cool code and helping others.
