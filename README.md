@@ -12,7 +12,7 @@
 [![Gists Badge](https://badges.pufler.dev/gists/ZechCodes?style=flat-square&color=3377ff)](https://gist.github.com/ZechCodes)
 [![Visits Badge](https://badges.pufler.dev/visits/ZechCodes/ZechCodes?style=flat-square&color=3377ff)](https://github.com/ZechCodes)
 
-I'm a software engineer with a passion for writing cool code and helping others.
+I'm a developer from upstate NY. I enjoy writing code that will help others build cool stuff. When I'm not busy doing that I can be found on the Beginner.py Discord helping people with their code.
 
 - 🐍 Python Expert
 - 💬 Beginner.py Discord Admin
