@@ -1,6 +1,6 @@
-<img src="personal-assets/rocket-blob.svg" align="right" width="240px" />
-
 # 🙋🏻‍♂️ Hi! I'm Zech!
+
+<img src="personal-assets/rocket-blob.svg" align="right" width="240px" />
 
 <!-- <a href="https://www.youtube.com/channel/UC6-iUsH8cOQ2GxGLyIVcw-Q">
     <img alt="youtube" title="YouTube" src="https://img.shields.io/badge/-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&labelColor=CF0000&color=FF0000"/>
