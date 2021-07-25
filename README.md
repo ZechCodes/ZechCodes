@@ -7,7 +7,7 @@
     <img alt="youtube" title="YouTube" src="https://img.shields.io/badge/-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&labelColor=CF0000&color=FF0000"/>
 </a> -->
 <a href="https://zech.codes">
-    <img alt="hashnode" title="Zech.codes on Hashnode" src="https://img.shields.io/badge/-Zech.codes?style=for-the-badge&logo=hashnode&logoColor=white&labelColor=1049e7&color=2962ff"/>
+    <img alt="zech.codes" title="zech.codes on Hashnode" src="https://img.shields.io/badge/-Zech.codes-blue?style=for-the-badge&logo=hashnode&logoColor=white&labelColor=1049e7&color=2962ff"/>
 </a>
 <a href="https://discord.gg/sfHykntuGy" alt="Beginner.py Discord Server">
     <img src="https://img.shields.io/badge/-Discord-5865F2?style=for-the-badge&logoColor=white&logo=discord&labelColor=4855E2"/>
