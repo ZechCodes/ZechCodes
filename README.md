@@ -9,7 +9,7 @@
 <a href="https://twitter.com/ZechCodes"><img alt="followers" title="Follow me on Twitter" src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=0081D2&color=1DA1F2"/></a>
 <a href="https://discord.gg/sfHykntuGy" alt="Beginner.py Discord Server"><img src="https://img.shields.io/badge/-Discord-5865F2?style=for-the-badge&logoColor=white&logo=discord&labelColor=4855E2"/></a>
 
-[![Commits Badge](https://badges.pufler.dev/commits/monthly/ZechCodes?style=flat-square&color=0050aa)](https://github.com/ZechCodes)
+[![Commits Badge](https://badges.pufler.dev/commits/yearly/ZechCodes?style=flat-square&color=0050aa)](https://github.com/ZechCodes)
 [![Repos Badge](https://badges.pufler.dev/repos/ZechCodes?style=flat-square&color=0050aa)](https://github.com/ZechCodes?tab=repositories)
 [![Gists Badge](https://badges.pufler.dev/gists/ZechCodes?style=flat-square&color=0050aa)](https://gist.github.com/ZechCodes)
 [![Visits Badge](https://badges.pufler.dev/visits/ZechCodes/ZechCodes?style=flat-square&color=0050aa)](https://github.com/ZechCodes)
