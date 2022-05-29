@@ -16,5 +16,5 @@
 
 I'm a developer from upstate NY. I enjoy writing code that will help others build cool stuff. When I'm not busy doing that I can be found on the Beginner.py Discord helping people with their code.
             
-- 🐍 Python Expert
+- 🐍 Python Master
 - 💬 Beginner.Codes Discord Admin
