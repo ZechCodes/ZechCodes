@@ -1,5 +1,3 @@
-<img src="personal-assets/rocket-blob.svg" align="right" width="30%" />
-
 # 🙋🏻‍♂️ Hi! I'm Zech!
 
 <!-- <a href="https://www.youtube.com/channel/UC6-iUsH8cOQ2GxGLyIVcw-Q">
@@ -10,12 +8,10 @@
 <a href="https://discord.gg/sfHykntuGy" alt="Beginner.py Discord Server"><img src="https://img.shields.io/badge/-Discord-5865F2?style=for-the-badge&logoColor=white&logo=discord&labelColor=4855E2"/></a>
 <a href="[https://discord.gg/sfHykntuGy](https://www.youtube.com/channel/UC6-iUsH8cOQ2GxGLyIVcw-Q)" alt="zech.codes on YouTube"><img src="https://img.shields.io/badge/-Youtube-FF0000?style=for-the-badge&logoColor=white&logo=youtube&labelColor=CC0000"/></a>
 
-[![Commits Badge](https://badges.pufler.dev/commits/yearly/ZechCodes?style=flat-square&color=0050aa)](https://github.com/ZechCodes)
-[![Repos Badge](https://badges.pufler.dev/repos/ZechCodes?style=flat-square&color=0050aa)](https://github.com/ZechCodes?tab=repositories)
-[![Gists Badge](https://badges.pufler.dev/gists/ZechCodes?style=flat-square&color=0050aa)](https://gist.github.com/ZechCodes)
-[![Visits Badge](https://badges.pufler.dev/visits/ZechCodes/ZechCodes?style=flat-square&color=0050aa)](https://github.com/ZechCodes)
-
 I'm a developer from upstate NY. I enjoy writing code that will help others build cool stuff. When I'm not busy doing that I can be found on the Beginner.py Discord helping people with their code.
             
 - 🐍 Python Master
 - 💬 Beginner.Codes Discord Admin
+
+
+![Zech's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZechCodes&show_icons=true&count_private=true&theme=github_dark&hide=stars)
