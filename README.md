@@ -30,7 +30,7 @@ The [Beginner.Codes Organization](https://github.com/beginner-codes) has a bunch
 
 ### Schism (Work in Progress)
 
-[Schism](https://github.com/ZechCodes/schism) is a microservice framework that uses Bevy to separate services out from a shared codebase. It will allow a monolithic application to be split it into separate stand alone applications that communicate over the network. Unfortunately it cannot magically break every monolith into microservices, each application will have to be written in a service-oriented way. Its purpose is to simplify bridging between services inside of the application without requiring the services to know anything about the bridge being used.
+[Schism](https://github.com/ZechCodes/schism) is a microservice framework that uses Bevy to separate services out from a shared codebase. It allows a monolithic application to be split it into separate stand alone applications that communicate over the network. Not every monolith can be broken into microservices, it can only work with applications written in a service-oriented way. Its purpose is to simplify bridging between services without requiring the services to know anything about the bridges being used.
 
 ## My GitHub Activity
 
