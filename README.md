@@ -13,7 +13,7 @@ I run a thriving Discord community, [Beginner.Codes](https://zech.codes/discord)
 
 ### Ommi
 
-[Ommi](https://github.com/ZechCodes/Ommi) is an object model mapper framework for Python that aims for simplicity and portability over feature support. It relies on existing model implementations (tested with dataclasses, [Attrs](https://www.attrs.org/en/stable/), and [Pydantic](https://docs.pydantic.dev/latest/)) and includes drivers for SQLite3, PostgreSQL (psycopg 3.0), and MongoDB (motor).
+[Ommi](https://github.com/ZechCodes/Ommi) is an object model mapper framework (think an ORM but not just for relational DB's) for Python that aims for simplicity and portability over feature support. It relies on existing model implementations (tested with dataclasses, [Attrs](https://www.attrs.org/en/stable/), and [Pydantic](https://docs.pydantic.dev/latest/)) and includes drivers for SQLite3, PostgreSQL (psycopg 3.0), and MongoDB (motor).
 
 To ensure compatibility with the most possible database backends, Ommi only aims to provide features that cover the most common use cases. It has an expressive query builder using Python's operators, relies on asyncio, and currently provides basic CRUD operations. Soon, it will provide support for joins and queries that reference multiple models.
 
