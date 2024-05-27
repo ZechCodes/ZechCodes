@@ -13,15 +13,15 @@ I run a thriving Discord community, [Beginner.Codes](https://zech.codes/discord)
 
 ### Ommi
 
-[Ommi](https://github.com/ZechCodes/Ommi) is an object model mapper framework (think an ORM but not just for relational DB's) for Python that aims for simplicity and portability over feature support. It relies on existing model implementations (tested with dataclasses, [Attrs](https://www.attrs.org/en/stable/), and [Pydantic](https://docs.pydantic.dev/latest/)) and includes drivers for SQLite3, PostgreSQL (psycopg 3.0), and MongoDB (motor).
+[Ommi](https://github.com/ZechCodes/Ommi) is an object model mapper framework (think an ORM but not just for relational DB's) for Python that aims for simplicity and portability over feature support. It relies on existing model implementations (tested with dataclasses, [Attrs](https://www.attrs.org/en/stable/), and [Pydantic](https://docs.pydantic.dev/latest/)) and includes drivers for SQLite3, PostgreSQL ([psycopg 3.0](https://www.psycopg.org/psycopg3/docs/index.html)), and MongoDB ([Motor](https://motor.readthedocs.io/en/stable/)).
 
-To ensure compatibility with the most possible database backends, Ommi only aims to provide features that cover the most common use cases. It has an expressive query builder using Python's operators, relies on asyncio, and currently provides basic CRUD operations. Soon, it will provide support for joins and queries that reference multiple models.
+To ensure compatibility with the most possible database backends, Ommi only aims to provide features that cover the most common use cases. It has an expressive query builder using Python's operators, relies on asyncio, and currently provides basic CRUD operations. Soon, it will support joins and queries that reference multiple models.
 
 ## Active & Completed Projects
 
 ### Bevy
 
-[Bevy](https://github.com/ZechCodes/Bevy) is a dependency inversion framework for Python. It relies on objects to track, however it doesn't require an understanding of OOP to use. It provides powerful control over how instances are created when injecting using a system of provider objects. Providers allow dependencies to be initialized with values from the environment, config files, etc. at runtime.
+[Bevy](https://github.com/ZechCodes/Bevy) is a dependency inversion framework for Python. It relies on objects to track dependencies, however it doesn't require an understanding of OOP to use. It provides powerful control over how instances are created when injecting using a system of provider objects. Providers allow dependencies to be initialized with values from the environment, config files, etc. at runtime.
 
 ### Beginner.Codes
 
