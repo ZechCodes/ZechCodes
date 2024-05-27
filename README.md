@@ -25,17 +25,17 @@ To ensure compatibility with the most possible database backends, Ommi only aims
 
 ### Beginner.Codes
 
-The [Beginner.Codes Organization](https://github.com/beginner-codes) I run has a bunch of projects I created that are necessary to  the operation of the Discord community. There are websites, Discord bots, etc., that I and the community members have written.
+The [Beginner.Codes Organization](https://github.com/beginner-codes) I run has a bunch of projects I created that are necessary to  the operation of the Discord community. There are websites, Discord bots, etc., that the community members and I have created.
 
 ## Projects on the Backburner
 
 ### Schism
 
-[Schism](https://github.com/ZechCodes/schism) allows you to write standalone services as if they were all part of the same application. This enables applications that can run either as a monolith or as distinct microservices. There is no build-time tooling; everything happens at runtime using dependency injection and facades that bridge calls to services.
+[Schism](https://github.com/ZechCodes/schism) allows you to write standalone Python services as if they were all part of the same application. This enables applications to run as a monolith or as distinct services. There is no build-time tooling; everything happens at runtime using dependency injection and facades that bridge calls to services.
 
 ### Wordlette
 
-[Wordlette](https://github.com/ZechCodes/wordlette) is an opinionated and extensible CMS built as an out-of-the-box, no-code necessary, website solution.
+[Wordlette](https://github.com/ZechCodes/wordlette) is an opinionated and extensible CMS written in Python, built as an out-of-the-box, no-code necessary, website solution.
 
 ## My GitHub Activity
 
