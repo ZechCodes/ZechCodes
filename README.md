@@ -15,6 +15,10 @@ I run [Smarter.Dev](https://zech.codes/discord), a developer community helping p
 
 [Skrift](https://github.com/ZechCodes/Skrift) is a lightweight CMS built with Litestar and SQLAlchemy. It powers my personal site [zech.sh](https://zech.sh) and is designed to be simple, extensible, and developer-friendly.
 
+### ActionDash
+
+[ActionDash](https://github.com/ZechCodes/ActionDash) is a real-time GitHub Actions monitoring dashboard. Track CI/CD pipeline status across multiple repos with webhook-driven updates, historical success/failure charts, and live job progress. Built with Python, Litestar, and Skrift CMS, deployed on Kubernetes.
+
 ### Bevy
 
 [Bevy](https://github.com/ZechCodes/Bevy) is a dependency injection framework for Python with 70+ stars. It provides powerful control over how instances are created using a system of provider objects, without requiring an understanding of OOP to use.
