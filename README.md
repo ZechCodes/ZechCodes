@@ -35,6 +35,3 @@ I run [Smarter.Dev](https://zech.codes/discord), a developer community helping p
 
 I run the [Smarter.Dev](https://zech.codes/discord) Discord community, where developers are helping each other build real skills in the age of AI. I enjoy breaking down complex concepts and making them accessible to everyone.
 
-## GitHub Activity
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=ZechCodes&theme=dark&hide_border=true)](https://git.io/streak-stats)
