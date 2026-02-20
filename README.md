@@ -37,4 +37,4 @@ I run the [Smarter.Dev](https://zech.codes/discord) Discord community, where dev
 
 ## GitHub Activity
 
-![Zech's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZechCodes&show_icons=true&count_private=true&theme=github_dark&hide=stars)
+[![GitHub Streak](https://streak-stats.demolab.com?user=ZechCodes&theme=dark&hide_border=true)](https://git.io/streak-stats)
