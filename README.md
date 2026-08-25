@@ -6,7 +6,7 @@
 
 I build AI agent orchestration systems: multi-agent architectures that plan, execute, and review real work. Orchestration is a systems problem, and most teams treat it like a prompting problem.
 
-That take comes from a decade of Python: frameworks, services, and the infrastructure underneath them, rebuilt until they were right. I'm building agent orchestration products on that thesis now (public soon), and writing it all down at [dump.zech.sh](https://dump.zech.sh) as I go.
+That take comes from a decade of Python: frameworks, services, and the infrastructure underneath them, rebuilt until they were right. I'm building agent orchestration products on that thesis now, and writing it all down at [zech.sh](https://zech.sh) as I go.
 
 I also run [Smarter Dev](https://smarter.dev), a 13,000-member developer community helping people build real skills in the age of AI.
 
