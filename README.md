@@ -1,13 +1,13 @@
-# Hi! I'm Zech!
-<a href="https://zech.sh"><img alt="zech.sh" title="zech.sh" src="https://img.shields.io/badge/-zech.sh-blue?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=1049e7&color=2962ff"/></a>
-<a href="https://dump.zech.sh"><img alt="Blog" title="dump.zech.sh" src="https://img.shields.io/badge/-Blog-2962ff?style=for-the-badge&logo=rss&logoColor=white&labelColor=1049e7&color=2962ff"/></a>
-<a href="https://twitter.com/ZechCodes"><img alt="followers" title="Follow me on Twitter" src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=0081D2&color=1DA1F2"/></a>
-<a href="https://discord.gg/sfHykntuGy" alt="Smarter Dev Discord Server"><img src="https://img.shields.io/badge/-Discord-5865F2?style=for-the-badge&logoColor=white&logo=discord&labelColor=4855E2"/></a>
+# Zech Zimmerman
+
+[zech.sh](https://zech.sh) · [Blog](https://dump.zech.sh) · [X](https://x.com/ZechCodes) · [Smarter Dev Discord](https://discord.gg/sfHykntuGy)
 
 I build AI agent orchestration systems: multi-agent architectures that plan, execute, and review real work. Orchestration is a systems problem, and most teams treat it like a prompting problem.
 
-That take comes from a decade of Python: frameworks, services, and the infrastructure underneath them, rebuilt until they were right. I'm building agent orchestration products on that thesis now, and writing it all down at [zech.sh](https://zech.sh) as I go.
+**Now: [Build](https://github.com/ZechCodes/Build)**, an open-source control plane for coding agents. Agents run on your machine; you plan, review, and steer from any device over an end-to-end encrypted link. Invite-only alpha at [getbuild.ing](https://getbuild.ing).
 
-I also run [Smarter Dev](https://smarter.dev), a 13,000-member developer community helping people build real skills in the age of AI.
+That take comes from a decade of Python: frameworks ([Bevy](https://github.com/ZechCodes/Bevy), [Ommi](https://github.com/ZechCodes/Ommi), [Schism](https://github.com/ZechCodes/Schism)), services, and the infrastructure underneath them, rebuilt until they were right. I write it all down at [zech.sh](https://zech.sh) as I go.
 
-If you need agents doing dependable work in production, not demos, I take on scoped consulting engagements: [zech.sh](https://zech.sh)
+I also run [Smarter Dev](https://smarter.dev), a 13,000-member developer community, and its RunHacks challenge seasons.
+
+If you need agents doing dependable work in production, not demos, I take on scoped engagements: [zech.sh/book](https://zech.sh/book).
